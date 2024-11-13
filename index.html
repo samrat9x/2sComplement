@@ -190,14 +190,14 @@
           taskItem.className = "task-item";
 
           taskItem.innerHTML = `
-                  <div class="task-name">${task.name}</div>
-                  <div class="task-time" id="time-${activeTab}-${index}">${formatTime(
+                    <div class="task-name">${task.name}</div>
+                    <div class="task-time" id="time-${activeTab}-${index}">${formatTime(
             task.time
           )}</div>
-                  <button onclick="toggleTimer('${activeTab}', ${index})" class="timer-button">Start Timer</button>
-                  <button onclick="editTask('${activeTab}', ${index})" class="edit">Edit</button>
-                  <button onclick="deleteTask('${activeTab}', ${index})" class="delete">Delete</button>
-              `;
+                    <button onclick="toggleTimer('${activeTab}', ${index})" class="timer-button">Start Timer</button>
+                    <button onclick="editTask('${activeTab}', ${index})" class="edit">Edit</button>
+                    <button onclick="deleteTask('${activeTab}', ${index})" class="delete">Delete</button>
+                `;
 
           taskList.appendChild(taskItem);
           updateTimerButton(task, index);
